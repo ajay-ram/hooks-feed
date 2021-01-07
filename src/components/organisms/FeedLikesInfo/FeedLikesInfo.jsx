@@ -1,13 +1,14 @@
 import InfoText from '../../atoms/InfoText/InfoText';
 
-const FeedLikesInfo = props => (
-    <div class="container">
-        <div class="row">
+function FeedLikesInfo (props) {
+    return(
+    <div className="container">
+        <div className="row">
             
-            <div class="col-6">
+            <div className="col-6">
                 <InfoText description = {props.likes} info ="likes"/>
             </div>
-            <div class="col-4">
+            <div className="col-4">
                 <InfoText description = {props.comments} info ="comments"/>
                 &nbsp;&nbsp;
                 <InfoText description = {props.shares} info ="shares"/>
@@ -17,6 +18,7 @@ const FeedLikesInfo = props => (
             </div> */}
         </div>
     </div>
-);
+    );
+}
 
 export default FeedLikesInfo;

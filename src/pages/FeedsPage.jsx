@@ -1,15 +1,7 @@
-import React, { useState, useEffect } from 'react';
 import FeedList from '../components/templates/FeedList/FeedList';
-
+import FetchHook from '../CustomHooks/FetchHook';
 function FeedsPage(){
-const [data, setData] = useState([]);
-  const getData = () =>
-    fetch('http://www.json-generator.com/api/json/get/bPHuBCstea?indent=2')
-      .then((res) => res.json())
-  useEffect(() => {
-    getData().then((data) => setData(data))
-  }, [])
-  console.log(data);
+const [data] = FetchHook();
   return (
     <FeedList data = {data}/>
   );

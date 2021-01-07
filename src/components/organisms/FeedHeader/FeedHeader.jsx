@@ -2,11 +2,11 @@ import UserInfo from '../../molecules/UserInfo/UserInfo';
 import CircularImageView from '../../atoms/CircularImageView/CircularImageView';
 
 const FeedHeader = props => (
-            <div class="row">
-                <div class="col-auto mr-auto">
+            <div className="row">
+                <div className="col-auto mr-auto">
                     <CircularImageView source ={props.source} />
                 </div>
-                <div class="col">
+                <div className="col">
                     <UserInfo username = {props.username} timeStamp = {props.timeStamp}/>
                 </div>
             </div>

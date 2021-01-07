@@ -1,18 +1,21 @@
-import FeedCard from '../../templates/FeedCard/FeedCard';
+import FeedCard from '../../organisms/FeedCard/FeedCard';
 
 const FeedList = props => (
     <div className = "container">
         {
-            props.data.map(item =>(
+            props.data.map((item, index) =>(
                 <div>
                 <FeedCard 
+                    id = {item.id}
                     source = {item.source} 
                     username = {item.username}
                     timeStamp = {item.timeStamp}
                     description = {item.description}  
                     likes = {item.likes}
-                    comments = {item.comments.length}
+                    isLiked = {item.isLiked}
+                    comments = {item.comments}
                     shares = {item.shares}
+                    key = {index}
                 />
                 <br/>
                 </div>

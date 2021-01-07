@@ -1,7 +1,7 @@
 import Image from 'react-bootstrap/Image'
 
 const FeedImage = props => (
-    <div class="d-flex justify-content-center">
+    <div className="d-flex justify-content-center">
     <Image 
             style={{
                 position: 'relative',
