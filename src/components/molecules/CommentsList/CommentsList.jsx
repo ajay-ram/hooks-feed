@@ -1,4 +1,4 @@
-import PlainText from '../../atoms/PlainText/PlainText'
+import Typography from '../../atoms/Typography/Typography';
 const CommentsList = props => (
     <div>
         {
@@ -6,11 +6,9 @@ const CommentsList = props => (
             <div>
                 <hr/>
                 <div className = "container">
-                <PlainText description = {comment} key= {index}/>
+                <Typography variant = "body1" body = {comment} key= {index}/>
                 </div>
-            </div>
-            
-            // console.log(comment)
+            </div>            
         ))
         }
     </div>

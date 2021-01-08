@@ -1,4 +1,4 @@
-import InfoText from '../../atoms/InfoText/InfoText';
+import TextField from '../../atoms/Typography/Typography';
 
 function FeedLikesInfo (props) {
     return(
@@ -6,12 +6,12 @@ function FeedLikesInfo (props) {
         <div className="row">
             
             <div className="col-6">
-                <InfoText description = {props.likes} info ="likes"/>
+                <TextField variant = "" body = {props.likes + 'likes'}/>
             </div>
             <div className="col-4">
-                <InfoText description = {props.comments} info ="comments"/>
+                <TextField variant = "" body = {props.comments +'comments'}/>
                 &nbsp;&nbsp;
-                <InfoText description = {props.shares} info ="shares"/>
+                <TextField variant = "" body = {props.shares + 'shares'}/>
             </div>
             {/* <div class="col-2">
                 <InfoText description = {props.shares} info ="shares"/>

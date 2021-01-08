@@ -11,20 +11,36 @@ function FeedBottomBar (props){
             <div className="row">
                 <div className="col-sm">
                     
-                    <FeedButton size ="default" color = {props.color} variant = {"text"} buttonName = {props.text} handleEvent={props.handleLikeEvent} icon ={<LikeIcon color={props.color} fontSize ={"default"}/>}/>  
+                    <FeedButton 
+                            size ="default" 
+                            color = {props.color} 
+                            variant = {"text"} 
+                            buttonName = {props.text} 
+                            handleEvent={props.handleLikeEvent} 
+                            icon ={<LikeIcon color={props.color} 
+                            fontSize ={"default"}/>}/>  
                 </div>
                 <div className="col-sm">
-                    <FeedButton size ="default" color = "primary" variant = {"text"} buttonName = "comment" handleEvent={props.handleCommentEvent} icon ={<CommentIcon color = "primary" fontSize ={"default"}/>}/>    
+                    <FeedButton 
+                            size ="default" 
+                            color = "action" 
+                            variant = {"text"} 
+                            buttonName = "comment" 
+                            handleEvent={props.handleCommentEvent} 
+                            icon ={<CommentIcon color = "action" fontSize ={"default"}/>}/>    
                 </div>
                 <div className="col-sm">
-                    <FeedButton size ="default" variant = {"text"} color = "primary"
-                     buttonName ="share" handleEvent={props.handleShareEvent} icon ={<Share color = "primary" fontSize ={"default"}/>}/>    
+                    <FeedButton 
+                            size ="default" 
+                            variant = {"text"} 
+                            color = "action"
+                            buttonName ="share" 
+                            handleEvent={props.handleShareEvent} 
+                            icon ={<Share color = "action" fontSize ={"default"}/>}/>    
                 </div>  
-                        
             </div>
         </div>
     );
-    
 }
 
 export default FeedBottomBar;
