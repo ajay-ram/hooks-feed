@@ -1,11 +1,11 @@
 import InputWithButton from '../../molecules/InputWithButton/InputWithButton';
 import CommentsList from '../../molecules/CommentsList/CommentsList';
-import Card from 'react-bootstrap/Card';
-
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
     const CommentSection = props => (
     <div className = "container">
         <Card>
-            <Card.Body>
+            <CardContent>
                 <InputWithButton 
                             id = "comment_input" 
                             type= "text" 
@@ -14,7 +14,7 @@ import Card from 'react-bootstrap/Card';
                             onChange = {props.onChange}
                             handleEvent={props.onSend}/>
                 <CommentsList comments = {props.comments}/>
-            </Card.Body>
+            </CardContent>
         </Card>
         
     </div>

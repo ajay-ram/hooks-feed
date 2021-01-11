@@ -1,8 +1,8 @@
 import React from 'react';
-import CircularImageView from '../components/atoms/CircularImageView/CircularImageView';
+import CircularImageView from '../../components/atoms/CircularImageView/CircularImageView';
 
 export default {
-  title: 'Components/CircularImageView',
+  title: 'Components/atoms/CircularImageView',
   component: CircularImageView
 };
 

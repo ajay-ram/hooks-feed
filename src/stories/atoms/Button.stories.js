@@ -1,10 +1,10 @@
 import React from 'react';
 
-import FeedButton from '../components/atoms/Buttons/Button';
-import LikeIcon from '../components/atoms/Icons/LikeIcon';
+import FeedButton from '../../components/atoms/Buttons/Button';
+import LikeIcon from '../../components/atoms/Icons/LikeIcon';
 
 export default {
-  title: 'Components/FeedButton',
+  title: 'Components/atoms/FeedButton',
   component: FeedButton
 };
 

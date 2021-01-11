@@ -1,8 +1,8 @@
 import React from 'react';
-import CommentIcon from '../components/atoms/Icons/CommentIcon';
+import CommentIcon from '../../components/atoms/Icons/CommentIcon';
 
 export default {
-  title: 'Components/CommentIcon',
+  title: 'Components/atoms/CommentIcon',
   component: CommentIcon
 };
 

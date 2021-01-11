@@ -1,8 +1,8 @@
 import React from 'react';
-import ShareIcon from '../components/atoms/Icons/ShareIcon';
+import ShareIcon from '../../components/atoms/Icons/ShareIcon';
 
 export default {
-  title: 'Components/ShareIcon',
+  title: 'Components/atoms/ShareIcon',
   component: ShareIcon
 };
 

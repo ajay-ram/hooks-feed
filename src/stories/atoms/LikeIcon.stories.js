@@ -1,8 +1,8 @@
 import React from 'react';
-import LikeIcon from '../components/atoms/Icons/LikeIcon';
+import LikeIcon from '../../components/atoms/Icons/LikeIcon';
 
 export default {
-  title: 'Components/LikeIcon',
+  title: 'Components/atoms/LikeIcon',
   component: LikeIcon
 };
 

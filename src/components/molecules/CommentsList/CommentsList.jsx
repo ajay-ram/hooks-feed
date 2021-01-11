@@ -4,10 +4,10 @@ const CommentsList = props => (
         {
         props.comments.slice(0).reverse().map((comment ,index) =>(
             <div>
-                <hr/>
                 <div className = "container">
                 <Typography variant = "body1" body = {comment} key= {index}/>
                 </div>
+                <hr/>
             </div>            
         ))
         }

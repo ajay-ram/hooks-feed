@@ -5,11 +5,11 @@ const InputWithButton = props =>(
     <div className="row">
         <div className="col-9">
                 <Input 
-                className="form-control" 
-                id = {props.id}
-                type= {props.type}
-                placeholder = {props.placeholder}
-                onChange ={props.onChange}/>
+                    className="form-control" 
+                    id = {props.id}
+                    type= {props.type}
+                    placeholder = {props.placeholder}
+                    onChange ={props.onChange}/>
         </div>
         <div className="col-1">
             <FeedButton 

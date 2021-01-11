@@ -6,9 +6,9 @@ const CircularImageView = props => (
 
     <img 
         style={{
-            width: 60,
-            height: 60,
-            borderRadius: 60 / 2
+            width: 80,
+            height: 80,
+            borderRadius: 80 / 2
           }}
         src={props.source} 
         alt="unsupported format" ></img>
