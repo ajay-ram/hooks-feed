@@ -12,9 +12,6 @@ function FeedLikesInfo (props) {
                 &nbsp;&nbsp;
                 <TextField variant = "" body = {props.shares + ' shares'}/>
             </div>
-            {/* <div class="col-2">
-                <InfoText description = {props.shares} info ="shares"/>
-            </div> */}
         </div>
     );
 }

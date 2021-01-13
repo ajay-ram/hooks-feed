@@ -1,7 +1,8 @@
 import FeedButton from '../../atoms/Buttons/Button';
-import LikeIcon from '../../atoms/Icons/LikeIcon';
-import Share from '../../atoms/Icons/ShareIcon';
-import CommentIcon from '../../atoms/Icons/CommentIcon';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import ShareIcon from '@material-ui/icons/Share';
+import ChatIcon from '@material-ui/icons/Chat';
+
 
 
 function FeedBottomBar (props){
@@ -12,31 +13,31 @@ function FeedBottomBar (props){
                 <div className="col-sm">
                     
                     <FeedButton 
-                            size ="default" 
+                            size ="medium" 
                             color = {props.color} 
                             variant = {"text"} 
                             buttonName = {props.text} 
                             handleEvent={props.handleLikeEvent} 
-                            icon ={<LikeIcon color={props.color} 
+                            icon ={<FavoriteIcon color={props.color} 
                             fontSize ={"default"}/>}/>  
                 </div>
                 <div className="col-sm">
                     <FeedButton 
-                            size ="default" 
-                            color = "action" 
+                            size ="medium" 
+                            color = "default" 
                             variant = {"text"} 
                             buttonName = "comment" 
                             handleEvent={props.handleCommentEvent} 
-                            icon ={<CommentIcon color = "action" fontSize ={"default"}/>}/>    
+                            icon ={<ChatIcon color = "action" fontSize ={"default"}/>}/>    
                 </div>
                 <div className="col-sm">
                     <FeedButton 
-                            size ="default" 
+                            size ="medium" 
                             variant = {"text"} 
-                            color = "action"
+                            color = "default"
                             buttonName ="share" 
                             handleEvent={props.handleShareEvent} 
-                            icon ={<Share color = "action" fontSize ={"default"}/>}/>    
+                            icon ={<ShareIcon color = "action" fontSize ={"default"}/>}/>    
                 </div>  
             </div>
         </div>

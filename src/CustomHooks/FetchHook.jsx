@@ -19,7 +19,6 @@ const FetchHook = () =>{
       setData(data);
     });
   }, []);
-  console.log(data);
   return [data]
 }
 export default FetchHook;

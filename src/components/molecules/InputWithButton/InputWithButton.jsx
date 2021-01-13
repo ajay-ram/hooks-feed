@@ -8,6 +8,7 @@ const InputWithButton = props =>(
                     className="form-control" 
                     id = {props.id}
                     type= {props.type}
+                    value = {props.value}
                     placeholder = {props.placeholder}
                     onChange ={props.onChange}/>
         </div>
@@ -15,8 +16,8 @@ const InputWithButton = props =>(
             <FeedButton 
                     buttonName = "Send" 
                     handleEvent={props.handleEvent}
-                    size ="default" 
-                    color = "action" 
+                    size ="medium" 
+                    color = "default" 
                     variant = {"text"} 
                     icon ={<SendIcon color = "action" fontSize ={"default"}/>} />    
         </div>

@@ -13,6 +13,6 @@ const FeedLikesInfoTemplate = (args) => <FeedLikesInfo {...args} />;
 export const FeedLikesInfoDemo = FeedLikesInfoTemplate.bind({});
 FeedLikesInfoDemo.args = {
   likes : 10,
-  comments : 10,
+  commentsCount : 10,
   shares : 10
 };

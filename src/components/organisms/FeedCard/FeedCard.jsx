@@ -16,6 +16,7 @@ require('./styles.css');
 function FeedCard (props){
 
     const feed = props;
+    console.log(feed);
     const [showComments, setShowComments] = useState(false);
     const [commentText, setCommentText] = useState("");
     const handleCommentTextChange = ({ target }) => {
